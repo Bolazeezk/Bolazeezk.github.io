@@ -10,7 +10,6 @@
 :root {
   --ink: #182d43;
   --muted: #53657a;
-  --accent: #d0a76a;
   --bg: #f5f7fa;
   --border: #e1e7ee;
 }
@@ -35,7 +34,11 @@ a { color: #176781; }
 }
 .brand { color: white; font-weight: 750; text-decoration: none; }
 .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
-.navlinks a { color: #e3eaf2; text-decoration: none; font-size: .91rem; }
+.navlinks a {
+  color: #e3eaf2;
+  text-decoration: none;
+  font-size: .91rem;
+}
 .navlinks a:hover { color: white; text-decoration: underline; }
 .teaching-hero {
   background: linear-gradient(125deg, #12273d, #234864);
@@ -69,8 +72,7 @@ section { margin-bottom: 38px; }
   padding-top: 22px;
   margin-top: 22px;
 }
-.item h3 { margin: 8px 0; font-size: 1.15rem; }
-.meta { color: var(--muted); font-size: .92rem; }
+.item h3 { margin: 8px 0 0; font-size: 1.15rem; }
 .tag {
   display: inline-block;
   font-size: .78rem;
@@ -80,8 +82,7 @@ section { margin-bottom: 38px; }
   padding: 3px 11px;
   color: #295c6b;
 }
-.teaching-list { padding-left: 22px; }
-.teaching-list li { margin-bottom: 8px; }
+.back-link { display: inline-block; margin-top: 12px; }
 .footer {
   background: #12273d;
   color: #d5e1eb;
@@ -104,10 +105,10 @@ section { margin-bottom: 38px; }
       <a href="index.html">Home</a>
       <a href="index.html#research">Research</a>
       <a href="teaching.html" aria-current="page">Teaching</a>
-      <a href="index.html#education">Education</a>
-      <a href="index.html#leadership">Leadership &amp; Volunteering</a>
+      <a href="education.html">Education</a>
+      <a href="leadership.html">Leadership &amp; Service</a>
       <a href="index.html#publications">Scholarly Work</a>
-      <a href="Kaosarat_Azeez_CV.pdf" target="_blank">CV ↗</a>
+      <a href="Kaosarat_Azeez_CV.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </div>
@@ -117,72 +118,66 @@ section { margin-bottom: 38px; }
   <div class="wrap">
     <div class="eyebrow">Teaching &amp; Mentorship</div>
     <h1>Teaching Experience</h1>
-    <p>Supporting undergraduate mathematics learning through guided problem-solving, assessment, and tutoring.</p>
+    <p>
+      Supporting undergraduate mathematics learning through
+      guided problem-solving, assessment, and tutoring.
+    </p>
   </div>
 </header>
 
 <main class="wrap">
 
 <section>
-  <h2 class="section-title">University of Maryland, Baltimore County</h2>
+  <h2 class="section-title">
+    University of Maryland, Baltimore County
+  </h2>
   <p class="section-note">Graduate Teaching Assistant</p>
 
   <div class="panel">
     <div class="item">
       <span class="tag">Fall 2026</span>
       <h3>MAT 152 — Calculus and Analytic Geometry II</h3>
-      <p class="meta">University of Maryland, Baltimore County</p>
     </div>
   </div>
 </section>
-    
+
 <section>
   <h2 class="section-title">Illinois State University</h2>
-  <p class="section-note">Graduate Teaching Assistant · Fall 2024–Spring 2026</p>
+  <p class="section-note">Graduate Teaching Assistant</p>
 
   <div class="panel">
 
     <div class="item">
       <span class="tag">Spring 2026</span>
       <h3>Elements of Mathematical Reasoning</h3>
-      <p class="meta">Illinois State University</p>
     </div>
 
     <div class="item">
       <span class="tag">Fall 2025</span>
       <h3>MAT 121 — Applied Calculus</h3>
-      <p class="meta">Illinois State University</p>
     </div>
 
     <div class="item">
       <span class="tag">Spring 2025</span>
       <h3>MAT 146 — Engineering Applications of Calculus II</h3>
-      <p class="meta">Illinois State University</p>
     </div>
 
     <div class="item">
       <span class="tag">Fall 2024</span>
       <h3>MAT 120 — Finite Mathematics</h3>
-      <p class="meta">Illinois State University</p>
     </div>
 
   </div>
 </section>
 
-<section>
-  <div class="panel">
-    <p>
-      <a href="index.html">← Return to Homepage</a>
-      &nbsp;·&nbsp;
-      <a href="Kaosarat_Azeez_CV.pdf" target="_blank">View Academic CV ↗</a>
-    </p>
-  </div>
-</section>
+<a class="back-link" href="index.html">← Return to Homepage</a>
 
 </main>
 
 <footer class="footer">
-  <div class="wrap">© 2026 Kaosarat Bola Azeez · Built with GitHub Pages</div>
+  <div class="wrap">
+    © 2026 Kaosarat Bola Azeez · Built with GitHub Pages
+  </div>
 </footer>
 
 </body>
