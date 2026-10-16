@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic education of Kaosarat Bola Azeez.">
+<title>Education | Kaosarat Bola Azeez</title>
+
+<style>
+:root {
+  --ink: #182d43;
+  --muted: #53657a;
+  --bg: #f5f7fa;
+  --border: #e1e7ee;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+a { color: #176781; }
+.wrap { max-width: 1080px; margin: auto; padding: 0 24px; }
+.top { background: #12273d; color: white; }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+}
+.brand { color: white; font-weight: 750; text-decoration: none; }
+.navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+.navlinks a {
+  color: #e3eaf2;
+  text-decoration: none;
+  font-size: .91rem;
+}
+.navlinks a:hover { color: white; text-decoration: underline; }
+.page-hero {
+  background: linear-gradient(125deg, #12273d, #234864);
+  color: white;
+  padding: 55px 0;
+}
+.eyebrow {
+  color: #f1c88d;
+  text-transform: uppercase;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 10px 0;
+}
+.page-hero p { color: #d7e7f2; }
+main { padding: 48px 0 65px; }
+.section-title { font-size: 1.65rem; margin: 0 0 16px; }
+.panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+}
+.item + .item {
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+  margin-top: 22px;
+}
+.item h3 { margin: 0 0 5px; font-size: 1.15rem; }
+.item p { margin: 6px 0; }
+.meta { color: var(--muted); font-size: .92rem; }
+.back-link { display: inline-block; margin-top: 24px; }
+.footer {
+  background: #12273d;
+  color: #d5e1eb;
+  padding: 26px 0;
+  font-size: .9rem;
+}
+@media (max-width: 680px) {
+  .panel { padding: 22px; }
+  .navlinks { gap: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">K. B. Azeez</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#research">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="leadership.html">Leadership &amp; Service</a>
+      <a href="index.html#publications">Scholarly Work</a>
+      <a href="Kaosarat_Azeez_CV.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Academic Background</div>
+    <h1>Education</h1>
+    <p>My academic training and degree programs.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2 class="section-title">Academic Background</h2>
+
+  <div class="panel">
+
+    <div class="item">
+      <h3>University of Maryland, Baltimore County</h3>
+      <div class="meta">PhD in Applied Mathematics · 2026–Present</div>
+      <p>
+        Current doctoral studies, with emerging interests in numerical
+        analysis, data assimilation, and quantum computing.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Illinois State University</h3>
+      <div class="meta">MS in Mathematics · 2026</div>
+      <p>
+        <strong>Master's Thesis:</strong>
+        <em>Theoretical Analysis of Filtering and Smoothing
+        Techniques in Stochastic Time Series.</em>
+      </p>
+      <p>
+        <a href="https://ir.library.illinoisstate.edu/etd/2399"
+           target="_blank" rel="noopener noreferrer">
+          Read Thesis ↗
+        </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>Federal University of Technology, Minna</h3>
+      <div class="meta">B.Tech in Pure and Applied Mathematics · 2024</div>
+      <p>
+        Undergraduate research in mathematical modeling of liquefied
+        petroleum gas flow through cylindrical pipes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<a class="back-link" href="index.html">← Return to Homepage</a>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    © 2026 Kaosarat Bola Azeez · Built with GitHub Pages
+  </div>
+</footer>
+
+</body>
+</html>
