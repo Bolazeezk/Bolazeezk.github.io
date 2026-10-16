@@ -1,98 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kaosarat Bola Azeez is an Applied Mathematics PhD student at UMBC. Explore research in mathematical modeling, time series filtering, scientific computing, and emerging interests in numerical analysis, data assimilation, and quantum computing.">
-<meta name="author" content="Kaosarat Bola Azeez"><meta name="robots" content="index, follow">
-<meta property="og:type" content="website"><meta property="og:title" content="Kaosarat Bola Azeez | Applied Mathematics PhD Student"><meta property="og:description" content="Research, computational projects, teaching, and professional experience."><meta property="og:url" content="https://bolazeezk.github.io/">
-<link rel="canonical" href="https://bolazeezk.github.io/"><title>Kaosarat Bola Azeez | Applied Mathematics PhD Student</title>
-<style> 
-  .profile-headshot {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kaosarat Bola Azeez is an Applied Mathematics PhD student at UMBC. Research, teaching, and academic leadership.">
+<title>Kaosarat Bola Azeez | Applied Mathematics PhD Student</title>
+
+<style>
+:root {
+  --ink: #182d43;
+  --muted: #53657a;
+  --accent: #d0a76a;
+  --bg: #f5f7fa;
+  --border: #e1e7ee;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+a { color: #176781; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1080px; margin: auto; padding: 0 24px; }
+.top { background: #12273d; color: white; }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+}
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 750;
+}
+.navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+.navlinks a {
+  color: #e3eaf2;
+  text-decoration: none;
+  font-size: .91rem;
+}
+.navlinks a:hover { color: white; text-decoration: underline; }
+.hero {
+  padding: 78px 0 85px;
+  background: linear-gradient(125deg, #12273d, #234864);
+  color: white;
+}
+.eyebrow {
+  color: #f1c88d;
+  text-transform: uppercase;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.25rem);
+  line-height: 1.13;
+  margin: 14px 0;
+}
+.subtitle { font-size: 1.22rem; color: #eef4f9; }
+.interests { color: #c9dce9; max-width: 740px; }
+.profile-headshot {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  object-position: center;
   border-radius: 50%;
-  border: 4px solid #d0a76a;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 25px rgba(0,0,0,.25);
   display: block;
   margin: 0 auto 25px;
 }
-:root{--ink:#182d43;--muted:#53657a;--blue:#246b83;--accent:#d0a76a;--bg:#f5f7fa;--white:#fff;--border:#e1e7ee}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.7}a{color:#176781}a:hover{text-decoration:underline}.wrap{max-width:1080px;margin:auto;padding:0 24px}.top{background:#12273d;color:#fff}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:18px 0}.brand{font-weight:750;letter-spacing:.02em;color:white;text-decoration:none}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{color:#e3eaf2;text-decoration:none;font-size:.91rem}.navlinks a:hover{color:#fff;text-decoration:underline}.hero{padding:78px 0 85px;background:linear-gradient(125deg,#12273d,#234864);color:#fff}.eyebrow{color:#f1c88d;text-transform:uppercase;font-size:.78rem;letter-spacing:.16em;font-weight:700}.hero h1{font-size:clamp(2.4rem,6vw,4.25rem);letter-spacing:-.04em;line-height:1.13;margin:14px 0}.hero .subtitle{font-size:1.22rem;margin:0 0 12px;color:#eef4f9}.hero .interests{color:#c9dce9;max-width:740px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;border-radius:6px;padding:10px 18px;text-decoration:none;font-weight:650}.btn.primary{background:#e9c48e;color:#192d40}.btn.secondary{border:1px solid #a9c0d2;color:white}.btn:hover{text-decoration:none;filter:brightness(1.05)}main{padding:48px 0 65px}section{scroll-margin-top:24px;margin-bottom:38px}.section-title{font-size:1.65rem;letter-spacing:-.025em;margin:0 0 16px}.section-note{color:var(--muted);margin-top:-7px;margin-bottom:20px}.panel{background:white;border:1px solid var(--border);border-radius:12px;padding:28px 32px;box-shadow:0 5px 20px rgba(21,40,62,.035)}.panel p:first-child{margin-top:0}.panel p:last-child{margin-bottom:0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--border);border-radius:12px;padding:24px}.card h3{margin:0 0 8px;font-size:1.1rem}.card p{color:var(--muted);margin:0 0 12px}.tag{display:inline-block;font-size:.75rem;border:1px solid #cddde4;background:#f1f8fa;border-radius:30px;padding:3px 10px;color:#295c6b;margin:4px 4px 6px 0}.meta{color:var(--muted);font-size:.9rem}.item+.item{border-top:1px solid var(--border);padding-top:18px;margin-top:18px}.item h3{margin:0 0 3px}.item p{margin:6px 0}.linkline{display:flex;flex-wrap:wrap;gap:16px}.linkline a{overflow-wrap:anywhere}.footer{background:#12273d;color:#d5e1eb;padding:26px 0;font-size:.9rem}ul{padding-left:22px}li+li{margin-top:6px}@media(max-width:680px){.cards{grid-template-columns:1fr}.hero{padding:56px 0 62px}.panel{padding:22px}.navlinks{gap:12px}}
-
-/* Two-column homepage layout */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 650;
+}
+.btn.primary { background: #e9c48e; color: #192d40; }
+.btn.secondary { border: 1px solid #a9c0d2; color: white; }
+main { padding: 48px 0 65px; }
+section { margin-bottom: 38px; scroll-margin-top: 24px; }
+.section-title { font-size: 1.65rem; margin: 0 0 16px; }
+.section-note { color: var(--muted); margin-top: -7px; margin-bottom: 20px; }
+.panel, .card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+}
+.panel p:first-child { margin-top: 0; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 18px;
+}
+.card { padding: 24px; }
+.card h3, .item h3 { margin: 0 0 8px; }
+.card p { color: var(--muted); }
+.tag {
+  display: inline-block;
+  font-size: .75rem;
+  border: 1px solid #cddde4;
+  background: #f1f8fa;
+  border-radius: 30px;
+  padding: 3px 10px;
+  color: #295c6b;
+  margin-bottom: 8px;
+}
+.meta { color: var(--muted); font-size: .9rem; }
+.item + .item {
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+  margin-top: 18px;
+}
+.linkline { display: flex; flex-wrap: wrap; gap: 16px; }
+.research-link { font-weight: 600; text-decoration: none; }
+.footer {
+  background: #12273d;
+  color: #d5e1eb;
+  padding: 26px 0;
+  font-size: .9rem;
+}
 @media (min-width: 900px) {
-  .hero {
-    position: relative;
-  }
-
-  .hero .wrap {
-    padding-right: 290px;
-  }
+  .hero { position: relative; }
+  .hero .wrap { padding-right: 290px; }
   .hero .profile-headshot {
     position: absolute;
     width: 230px;
     height: 230px;
-    right: max(5%, calc((100% - 1100px) / 2));
+    right: max(5%, calc((100% - 1100px)/2));
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
   }
 }
-/* Center the photograph on smaller screens */
 @media (max-width: 899px) {
-  .hero .profile-headshot {
-    position: static;
-    transform: none;
-    margin: 0 auto 25px;
-  }
+  .hero .profile-headshot { margin: 0 auto 25px; }
 }
-
-.research-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #2563eb;
-  font-weight: 600;
-  text-decoration: none;
+@media (max-width: 680px) {
+  .cards { grid-template-columns: 1fr; }
+  .hero { padding: 56px 0 62px; }
+  .panel { padding: 22px; }
+  .navlinks { gap: 12px; }
 }
-
-.research-link:hover {
-  text-decoration: underline;
-}
-  
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kaosarat Bola Azeez","url":"https://bolazeezk.github.io/","jobTitle":"Applied Mathematics PhD Student","affiliation":{"@type":"CollegeOrUniversity","name":"University of Maryland, Baltimore County"},"sameAs":["https://github.com/Bolazeezk","https://orcid.org/0009-0002-5897-2569","https://www.linkedin.com/in/kaosaratbolaazeez/"]}</script>
 </head>
+
 <body>
-<div class="top"><div class="wrap nav"><a class="brand" href="#home">K. B. Azeez</a><nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav></div></div>
-<header class="hero" id="home"><img src="Headshot.jpeg"
-     alt="Portrait of Kaosarat Bola Azeez"
-     class="profile-headshot"><div class="wrap"><div class="eyebrow">Research · Computation · Education</div><h1>Kaosarat Bola Azeez</h1><p class="subtitle">PhD Student in Applied Mathematics · University of Maryland, Baltimore County</p><p class="interests">Exploring numerical analysis, data assimilation, and quantum computing — with a background in mathematical modeling, fluid dynamics, time series methods, and data-driven research.</p><div class="hero-actions"><a class="btn primary" href="#research">Explore research</a><a class="btn secondary" href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank" rel="noopener noreferrer">Read master's thesis ↗</a></div></div></header>
+
+<div class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#home">K. B. Azeez</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="#education">Education</a>
+      <a href="#leadership">Leadership &amp; Volunteering</a>
+      <a href="#publications">Scholarly Work</a>
+      <a href="Kaosarat_Azeez_CV.pdf" target="_blank">CV ↗</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero" id="home">
+  <img src="Headshot.jpeg" alt="Portrait of Kaosarat Bola Azeez" class="profile-headshot">
+  <div class="wrap">
+    <div class="eyebrow">Research · Computation · Education</div>
+    <h1>Kaosarat Bola Azeez</h1>
+    <p class="subtitle">PhD Student in Applied Mathematics · University of Maryland, Baltimore County</p>
+    <p class="interests">
+      Exploring numerical analysis, data assimilation, and quantum computing —
+      with a background in mathematical modeling, fluid dynamics,
+      time series methods, and data-driven research.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#research">Explore Research</a>
+      <a class="btn secondary" href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank">Read Master's Thesis ↗</a>
+    </div>
+  </div>
+</header>
+
 <main class="wrap">
-<section id="about"><h2 class="section-title">About Me</h2><div class="panel"><p>I am a PhD student in Applied Mathematics at the University of Maryland, Baltimore County (UMBC). My interests lie at the intersection of mathematical theory, computational methods, and applications, particularly in developing and understanding numerical approaches to complex problems.</p><p>My academic journey began with a B.Tech in Pure and Applied Mathematics from the Federal University of Technology, Minna, Nigeria. My undergraduate research investigated liquefied petroleum gas flow in cylindrical pipes using mathematical modeling and MATLAB simulations. I am currently revisiting this work with a colleague with the goal of preparing a scholarly publication.</p><p>I later earned an MS in Mathematics from Illinois State University, where my master's thesis examined polynomial-preserving linear filters for time series smoothing. The work studied Savitzky–Golay and Spencer filters through mathematical derivations, moment conditions, and numerical experiments.</p><p>My experience also includes healthcare predictive modeling and graph-theoretic approaches to stable matching. As I develop my doctoral research direction, I am especially interested in numerical analysis, data assimilation, and quantum computing. I also value teaching, mentorship, and interdisciplinary collaboration.</p>
-<p>
-  <a class="research-link"
-     href="Kaosarat_Azeez_CV.pdf"
-     target="_blank"
-     rel="noopener noreferrer">
-    View My Academic CV &rarr;
-  </a>
-</p>
-</div></section>
-<section id="research"><h2 class="section-title">Research & Selected Projects</h2><p class="section-note">Completed and ongoing work across applied mathematics, computation, and data analysis.</p><div class="cards"><article class="card"><span class="tag">Master's thesis · 2026</span><h3>Polynomial-Preserving Filters for Time Series</h3><p>Mathematical treatment of Savitzky–Golay and Spencer smoothing filters, including coefficient derivations, polynomial reproduction conditions, and numerical comparisons.</p><a href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank" rel="noopener noreferrer">Read thesis ↗</a> · <a href="https://github.com/Bolazeezk/polynomial-preserving-filters" target="_blank" rel="noopener noreferrer">Project repository ↗</a></article><article class="card"><span class="tag">Undergraduate research · Manuscript in preparation</span><h3>Mathematical Modeling of LPG Flow</h3><p>Studied liquefied petroleum gas flow through cylindrical pipes using differential-equation-based modeling and MATLAB simulations. Revisiting the work collaboratively for potential publication.</p></article><article class="card"><span class="tag">Applied data research</span><h3>Healthcare Predictive Modeling</h3><p>Worked with more than 89,000 Medicare records, using feature engineering and Random Forest models to explore how social determinants of health relate to healthcare outcomes and claims.</p>
-<p>
-  <a class="research-link"
-     href="https://news.illinoisstate.edu/2025/05/empowering-student-researchers-osf-healthcare-analytics-department-of-mathematics-collaboration/"
-     target="_blank"
-     rel="noopener noreferrer">
-    Featured in Illinois State University News &rarr;
-  </a>
-</p>
-</article><article class="card"><span class="tag">Mathematical algorithms</span><h3>Stable Matching & Graph Theory</h3><p>Studied stable matching problems and their applications using the Gale–Shapley algorithm, Hall's Marriage Theorem, and concepts of fairness and efficiency.</p></article></div></section>
-<section id="education"><h2 class="section-title">Education</h2><div class="panel"><div class="item"><h3>University of Maryland, Baltimore County</h3><div class="meta">PhD in Applied Mathematics · 2026–Present</div><p>Exploring potential doctoral research directions in numerical analysis, data assimilation, and quantum computing.</p></div><div class="item"><h3>Illinois State University</h3><div class="meta">MS in Mathematics · 2026</div><p>Master's thesis: <em>Theoretical Analysis of Filtering and Smoothing Techniques in Stochastic Time Series.</em></p></div><div class="item"><h3>Federal University of Technology, Minna</h3><div class="meta">B.Tech in Pure and Applied Mathematics · 2024</div><p>Undergraduate research in fluid dynamics and mathematical modeling.</p></div></div></section>
-<section id="experience"><h2 class="section-title">Teaching, Professional Experience & Leadership</h2><div class="panel"><div class="item"><h3>Graduate Teaching Assistant · UMBC</h3><div class="meta">2026–Present</div><p>Supporting Calculus II instruction and student learning.</p></div><div class="item"><h3>Graduate Teaching Assistant · Illinois State University</h3><div class="meta">2024–2026</div><p>Led mathematics problem-solving sessions, tutored students, and supported assessment and instruction.</p></div><div class="item"><h3>Data Analyst Intern · National Bureau of Statistics, Nigeria</h3><div class="meta">2022</div><p>Processed datasets and explored trends in economic data using analytical and visualization tools.</p></div><div class="item"><h3>Student Leadership</h3><p>Vice President, SIAM Student Chapter at UMBC; previously General Secretary of the Data Science, Mathematics and Statistics Club at Illinois State University.</p></div></div></section>
-<section id="skills"><h2 class="section-title">Computational & Analytical Skills</h2><div class="cards"><div class="card"><h3>Programming & Tools</h3><p>Python · MATLAB · SQL/MySQL · Power BI · Excel · LaTeX</p></div><div class="card"><h3>Methods & Areas</h3><p>Numerical methods · Mathematical modeling · Differential equations · Statistical modeling · Data visualization · Linear algebra</p></div></div></section>
-<section id="publications"><h2 class="section-title">Publications & Scholarly Work</h2><div class="panel"><p><strong>Azeez, K. B. (2026).</strong> <em>Theoretical Analysis of Filtering and Smoothing Techniques in Stochastic Time Series.</em> Master's thesis, Illinois State University.</p><p><a href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank" rel="noopener noreferrer">Official institutional repository ↗</a></p><p class="meta">Undergraduate fluid dynamics research: collaborative manuscript in preparation; not yet published.</p></div></section>
-<section id="contact"><h2 class="section-title">Connect</h2><div class="panel"><p>I welcome conversations about applied mathematics, computational research, teaching, and interdisciplinary collaboration.</p><div class="linkline"><a href="https://www.linkedin.com/in/kaosaratbolaazeez/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Bolazeezk" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://orcid.org/0009-0002-5897-2569" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="mailto:bolazeezk@gmail.com">Email ↗</a></div></div></section>
-</main><footer class="footer"><div class="wrap">© 2026 Kaosarat Bola Azeez · Built with GitHub Pages</div></footer>
-</body></html>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="panel">
+    <p>I am a PhD student in Applied Mathematics at the University of Maryland, Baltimore County (UMBC). My interests lie at the intersection of mathematical theory, computational methods, and applications, particularly in developing and understanding numerical approaches to complex problems.</p>
+    <p>My academic journey began with a B.Tech in Pure and Applied Mathematics from the Federal University of Technology, Minna, Nigeria. My undergraduate research investigated liquefied petroleum gas flow in cylindrical pipes using mathematical modeling and MATLAB simulations. I am currently revisiting this work with a colleague with the goal of preparing a scholarly publication.</p>
+    <p>I later earned an MS in Mathematics from Illinois State University, where my master's thesis examined polynomial-preserving linear filters for time series smoothing. The work studied Savitzky–Golay and Spencer filters through mathematical derivations, moment conditions, and numerical experiments.</p>
+    <p>My experience also includes healthcare predictive modeling and graph-theoretic approaches to stable matching. As I develop my doctoral research direction, I am especially interested in numerical analysis, data assimilation, and quantum computing. I also value teaching, mentorship, and interdisciplinary collaboration.</p>
+    <p><a class="research-link" href="Kaosarat_Azeez_CV.pdf" target="_blank">View My Academic CV →</a></p>
+  </div>
+</section>
+
+<section id="research">
+  <h2 class="section-title">Research &amp; Selected Projects</h2>
+  <p class="section-note">Completed and ongoing work across applied mathematics, computation, and data analysis.</p>
+
+  <div class="cards">
+    <article class="card">
+      <span class="tag">Master's Thesis · 2026</span>
+      <h3>Polynomial-Preserving Filters for Time Series</h3>
+      <p>Mathematical treatment of Savitzky–Golay and Spencer smoothing filters, including coefficient derivations, polynomial reproduction conditions, and numerical comparisons.</p>
+      <a href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank">Read Thesis ↗</a> ·
+      <a href="https://github.com/Bolazeezk/polynomial-preserving-filters" target="_blank">Project Repository ↗</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Undergraduate Research · Manuscript in Preparation</span>
+      <h3>Mathematical Modeling of LPG Flow</h3>
+      <p>Studied liquefied petroleum gas flow through cylindrical pipes using differential-equation-based modeling and MATLAB simulations. Revisiting the work collaboratively for potential publication.</p>
+    </article>
+
+    <article class="card">
+      <span class="tag">Applied Data Research</span>
+      <h3>Healthcare Predictive Modeling</h3>
+      <p>Worked with more than 89,000 Medicare records, using feature engineering and Random Forest models to explore how social determinants of health relate to healthcare outcomes and claims.</p>
+      <a class="research-link" href="https://news.illinoisstate.edu/2025/05/empowering-student-researchers-osf-healthcare-analytics-department-of-mathematics-collaboration/" target="_blank">
+        Featured in Illinois State University News →
+      </a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Mathematical Algorithms</span>
+      <h3>Stable Matching &amp; Graph Theory</h3>
+      <p>Studied stable matching problems and their applications using the Gale–Shapley algorithm, Hall's Marriage Theorem, and concepts of fairness and efficiency.</p>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="panel">
+    <div class="item">
+      <h3>University of Maryland, Baltimore County</h3>
+      <div class="meta">PhD in Applied Mathematics · 2026–Present</div>
+      <p>Exploring potential doctoral research directions in numerical analysis, data assimilation, and quantum computing.</p>
+    </div>
+    <div class="item">
+      <h3>Illinois State University</h3>
+      <div class="meta">MS in Mathematics · 2026</div>
+      <p>Master's thesis: <em>Theoretical Analysis of Filtering and Smoothing Techniques in Stochastic Time Series.</em></p>
+    </div>
+    <div class="item">
+      <h3>Federal University of Technology, Minna</h3>
+      <div class="meta">B.Tech in Pure and Applied Mathematics · 2024</div>
+      <p>Undergraduate research in fluid dynamics and mathematical modeling.</p>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <h2 class="section-title">Leadership &amp; Volunteering</h2>
+  <p class="section-note">Academic community involvement, student leadership, and mathematics support.</p>
+  <div class="panel">
+    <div class="item">
+      <h3>Student Leadership</h3>
+      <p><strong>Vice President</strong>, SIAM Student Chapter, University of Maryland, Baltimore County</p>
+      <p><strong>General Secretary</strong>, Data Science, Mathematics and Statistics Club, Illinois State University</p>
+    </div>
+    <div class="item">
+      <h3>Volunteer Mathematics Tutor</h3>
+      <div class="meta">Illinois State University · August 2025–August 2026</div>
+      <p>Supported students with mathematics learning through tutoring and guided problem-solving.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Computational &amp; Analytical Skills</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Programming &amp; Tools</h3>
+      <p>Python · MATLAB · SQL/MySQL · Power BI · Excel · LaTeX</p>
+    </div>
+    <div class="card">
+      <h3>Methods &amp; Areas</h3>
+      <p>Numerical methods · Mathematical modeling · Differential equations · Statistical modeling · Data visualization · Linear algebra</p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2 class="section-title">Publications &amp; Scholarly Work</h2>
+  <div class="panel">
+    <p><strong>Azeez, K. B. (2026).</strong> <em>Theoretical Analysis of Filtering and Smoothing Techniques in Stochastic Time Series.</em> Master's thesis, Illinois State University.</p>
+    <p><a href="https://ir.library.illinoisstate.edu/etd/2399" target="_blank">Official Institutional Repository ↗</a></p>
+    <p class="meta">Undergraduate fluid dynamics research: collaborative manuscript in preparation; not yet published.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Connect</h2>
+  <div class="panel">
+    <p>I welcome conversations about applied mathematics, computational research, teaching, and interdisciplinary collaboration.</p>
+    <div class="linkline">
+      <a href="https://www.linkedin.com/in/kaosaratbolaazeez/" target="_blank">LinkedIn ↗</a>
+      <a href="https://github.com/Bolazeezk" target="_blank">GitHub ↗</a>
+      <a href="https://orcid.org/0009-0002-5897-2569" target="_blank">ORCID ↗</a>
+      <a href="mailto:bolazeezk@gmail.com">Email ↗</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">© 2026 Kaosarat Bola Azeez · Built with GitHub Pages</div>
+</footer>
+
+</body>
+</html>
